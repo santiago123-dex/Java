@@ -1,6 +1,7 @@
+package mainbanco;
 import java.util.Scanner;
 
-import banco.CuentaBancaria;
+import bancario.CuentaBancaria;
 
 public class Main {
     public static void main(String[] args) {
