@@ -1,14 +1,13 @@
+import java.util.Scanner;
 
-public class Perro extends Animales {
-    private String sonido;
-
-    public Perro(String sonido){
-        this.sonido = sonido;
-    }
+public class Perro implements Sonido {
 
     @Override
-    public String hacerSonido(){
-        return sonido;
+    public String hacerSonido2() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Como hace el Perro ?: ");
+        String respuesta1 = scanner.nextLine();
+        scanner.close();
+        return respuesta1;
     }
 }
-

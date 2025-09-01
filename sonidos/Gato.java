@@ -1,15 +1,16 @@
+import java.util.Scanner;
 
+public class Gato implements Sonido {
 
-public class Gato extends Animales {
-    private String sonido;
-
-    public Gato(String sonido){
-        this.sonido = sonido;
-    }
 
     @Override
-    public String hacerSonido(){
-        return sonido;
+    public String hacerSonido2(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Como hace el gato? : ");
+        String respuesta = scanner.nextLine();
+        scanner.close();
+        return respuesta;
+
     }
 }
 
